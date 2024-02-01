@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <i class="bx bx-paper-plane"></i>
+
+        <div class="input-group">
+          <label for="">Full name</label>
+          <input
+            type="text"
+            name="text"
+            placeholder="Enter your name"
+            id="contact-name"
+            onkeyup="validateName()"
+          />
+          <span id="name-error">Name is required</span>
+        </div>
+        <div class="input-group">
+          <label for="">Phone no.</label>
+          <input type="tel" name="phone" id="" placeholder="+62 8888" />
+          <span id="phone-error">Phone is required</span>
+        </div>
+        <div class="input-group">
+          <label for="">Email Id</label>
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder="Enter your email"
+          />
+          <span id="email-error">Email is required</span>
+        </div>
+        <div class="input-group">
+          <label for="">Your Massage</label>
+          <textarea
+            name=""
+            id=""
+            rows="5"
+            placeholder="Enter your massage"
+          ></textarea>
+          <span id="massage-error">Massage is required</span>
+        </div>
+        <center>
+          <button type="submit">Submit</button>
+        </center>
+        <span id="submit-error">Fix error nih!!</span>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
